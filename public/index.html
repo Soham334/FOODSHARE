@@ -1,1 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Donation Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-hands-helping"></i>
+          <h1>FoodShare</h1>
+        </div>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#donate">Donate Now</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
 
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Food Donation Drive</h1>
+            <p>
+              Change will not come if we wait for some other person, or if we wait
+              for some other time. We are the ones we've been waiting for.
+            </p>
+            <div class="hero-buttons">
+              <a href="#donate" class="btn btn-primary">Donate Now</a>
+              <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number" data-count="10000">0</span>
+                <span class="stat-label">Meals Provided</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-label">Families Helped</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="25">0</span>
+                <span class="stat-label">Communities</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Child in need" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Our Mission</h2>
+          <p>Working together to end hunger in our communities</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Volunteers sorting food donations">
+          </div>
+          <div class="about-text">
+            <h3>Who We Are</h3>
+            <p>FoodShare is a community-driven initiative dedicated to fighting hunger and reducing food waste. We connect food donors with those in need, ensuring that no one in our community goes hungry.</p>
+            
+            <h3>Our Vision</h3>
+            <p>We envision a world where everyone has access to nutritious food, where communities come together to support one another, and where food waste is minimized.</p>
+            
+            <div class="values">
+              <div class="value-item">
+                <i class="fas fa-heart"></i>
+                <h4>Compassion</h4>
+                <p>We approach our work with empathy and understanding.</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-hands-helping"></i>
+                <h4>Community</h4>
+                <p>We believe in the power of people working together.</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-leaf"></i>
+                <h4>Sustainability</h4>
+                <p>We strive to reduce food waste and promote sustainable practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="donate">
+      <div class="container">
+        <div class="section-header">
+          <h2>Make a Difference Today</h2>
+          <p>Your generosity can change lives</p>
+        </div>
+        
+        <div class="donation-options">
+          <div class="donation-tabs">
+            <button class="tab-btn active" data-tab="money">Donate Money</button>
+            <button class="tab-btn" data-tab="food">Donate Food</button>
+            <button class="tab-btn" data-tab="time">Volunteer Time</button>
+          </div>
+          
+          <div class="tab-content">
+            <div class="tab-pane active" id="money-tab">
+              <form id="donation-form" class="donation-form">
+                <div class="form-group">
+                  <label for="amount">Select Amount</label>
+                  <div class="amount-options">
+                    <button type="button" class="amount-btn" data-amount="10">$10</button>
+                    <button type="button" class="amount-btn" data-amount="25">$25</button>
+                    <button type="button" class="amount-btn active" data-amount="50">$50</button>
+                    <button type="button" class="amount-btn" data-amount="100">$100</button>
+                    <button type="button" class="amount-btn" data-amount="custom">Custom</button>
+                  </div>
+                  <input type="number" id="amount" name="amount" value="50" placeholder="Enter custom amount" class="hidden">
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="payment_method">Payment Method</label>
+                  <select id="payment_method" name="payment_method" required>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="card">Card Information</label>
+                  <input type="text" id="card" placeholder="Card Number">
+                  <div class="card-details">
+                    <input type="text" placeholder="MM/YY">
+                    <input type="text" placeholder="CVC">
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Donate Now</button>
+              </form>
+            </div>
+            
+            <div class="tab-pane" id="food-tab">
+              <div class="food-donation-info">
+                <div class="needed-items">
+                  <h3>Most Needed Items</h3>
+                  <ul class="items-list">
+                    <li><i class="fas fa-check"></i> Canned vegetables and fruits</li>
+                    <li><i class="fas fa-check"></i> Rice, pasta, and cereal</li>
+                    <li><i class="fas fa-check"></i> Peanut butter and jelly</li>
+                    <li><i class="fas fa-check"></i> Canned tuna and chicken</li>
+                    <li><i class="fas fa-check"></i> Cooking oil and spices</li>
+                    <li><i class="fas fa-check"></i> Baby food and formula</li>
+                  </ul>
+                </div>
+                
+                <form id="food-donation-form" class="food-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="food_type">Food Items You'd Like to Donate</label>
+                    <textarea id="food_type" name="food_type" placeholder="Please list the items you would like to donate" required></textarea>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="quantity">Approximate Quantity</label>
+                    <input type="text" id="quantity" name="quantity" placeholder="e.g. 5 cans, 2 bags, etc." required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="pickup_address">Pickup Address (If requesting pickup)</label>
+                    <textarea id="pickup_address" name="pickup_address" placeholder="Your address for pickup" required></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary btn-block">Schedule Donation</button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="time-tab">
+              <div class="volunteer-info">
+                <div class="volunteer-opportunities">
+                  <h3>Volunteer Opportunities</h3>
+                  <div class="opportunities-grid">
+                    <div class="opportunity-card">
+                      <i class="fas fa-box"></i>
+                      <h4>Food Sorting</h4>
+                      <p>Help sort and package donated food items</p>
+                    </div>
+                    <div class="opportunity-card">
+                      <i class="fas fa-truck"></i>
+                      <h4>Delivery Driver</h4>
+                      <p>Deliver food packages to families in need</p>
+                    </div>
+                    <div class="opportunity-card">
+                      <i class="fas fa-hands"></i>
+                      <h4>Food Distribution</h4>
+                      <p>Assist with distributing food at our centers</p>
+                    </div>
+                    <div class="opportunity-card">
+                      <i class="fas fa-bullhorn"></i>
+                      <h4>Outreach</h4>
+                      <p>Help spread awareness in the community</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <form id="volunteer-form" class="volunteer-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="volunteer_role">Preferred Role</label>
+                    <select id="volunteer_role" name="volunteer_role" required>
+                      <option value="">Select a role</option>
+                      <option value="sorting">Food Sorting</option>
+                      <option value="delivery">Delivery Driver</option>
+                      <option value="distribution">Food Distribution</option>
+                      <option value="outreach">Community Outreach</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="availability">Availability</label>
+                  <textarea id="availability" name="availability" placeholder="Please let us know your availability (days/times)" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="impact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Impact</h2>
+          <p>Together, we're making a difference</p>
+        </div>
+        
+        <div class="impact-content">
+          <div class="impact-stats">
+            <div class="impact-stat">
+              <div class="stat-circle">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <span class="stat-percentage">85%</span>
+              </div>
+              <h3>of donations go directly to food programs</h3>
+            </div>
+            
+            <div class="impact-stat">
+              <div class="stat-circle">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="92, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <span class="stat-percentage">92%</span>
+              </div>
+              <h3>reduction in food waste in partner stores</h3>
+            </div>
+            
+            <div class="impact-stat">
+              <div class="stat-circle">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle" stroke-dasharray="78, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <span class="stat-percentage">78%</span>
+              </div>
+              <h3>of families report improved food security</h3>
+            </div>
+          </div>
+          
+          <div class="testimonials">
+            <h3>Success Stories</h3>
+            <div class="testimonial-slider" id="testimonial-slider">
+              <div class="testimonial active">
+                <div class="testimonial-content">
+                  <p>"The food donations we received helped my family through a very difficult time. We are forever grateful for the support."</p>
+                  <div class="testimonial-author">
+                    <span class="author-name">Maria Johnson</span>
+                    <span class="author-location">Chicago, IL</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <p>"As a single father of three, the food assistance program has been a lifeline for us. Thank you for all that you do."</p>
+                  <div class="testimonial-author">
+                    <span class="author-name">David Williams</span>
+                    <span class="author-location">Atlanta, GA</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <p>"Volunteering with FoodShare has been one of the most rewarding experiences of my life. The impact we make is truly meaningful."</p>
+                  <div class="testimonial-author">
+                    <span class="author-name">Sarah Thompson</span>
+                    <span class="author-location">Denver, CO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-controls">
+              <button class="testimonial-btn prev" id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+              <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
+              <button class="testimonial-btn next" id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>We'd love to hear from you</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Our Location</h3>
+              <p>123 Donation Street<br>Foodville, CA 90210</p>
+            </div>
+            
+            <div class="contact-card">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Phone</h3>
+              <p>Main: (123) 456-7890<br>Donations: (123) 456-7891</p>
+            </div>
+            
+            <div class="contact-card">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>info@foodshare.org<br>donations@foodshare.org</p>
+            </div>
+            
+            <div class="contact-card">
+              <i class="fas fa-clock"></i>
+              <h3>Hours</h3>
+              <p>Monday-Friday: 9am-5pm<br>Saturday: 10am-2pm</p>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>         
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with our latest news, events, and opportunities</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fas fa-hands-helping"></i>
+            <h2>FoodShare</h2>
+            <p>Fighting hunger, feeding hope</p>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#impact">Our Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-links-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-links-column">
+              <h3>Connect With Us</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 FoodShare. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <i class="fas fa-check-circle"></i>
+        <h3>Thank You!</h3>
+        <p>Your submission has been received successfully. We'll be in touch soon!</p>
+        <button class="btn btn-primary modal-btn">OK</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
+
+  
