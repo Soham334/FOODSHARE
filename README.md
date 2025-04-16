@@ -180,9 +180,7 @@ FoodShare was developed by a dedicated team of students from Somaiya University:
 
 ## 📞 Contact Information
 
-- **Organization Address**: 123 Donation Street, Foodville, CA 90210
-- **Email**: info@foodshare.org, donations@foodshare.org
-- **Phone**: Main: (123) 456-7890, Donations: (123) 456-7891
+- **Email**: soham.ks@somaiya.edu
 - **Hours**: Monday-Friday: 9am-5pm, Saturday: 10am-2pm
 
 ## 🤝 How to Contribute
