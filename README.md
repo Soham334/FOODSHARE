@@ -108,8 +108,6 @@ We strive for environmentally responsible practices that reduce food waste while
 ### Prerequisites
 - PHP 7.4 or higher
 - MySQL 5.7 or higher
-- Apache web server
-- Composer (recommended for dependencies)
 
 ### Quick Setup
 
