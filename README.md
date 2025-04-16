@@ -1,7 +1,7 @@
 # FoodShare
 
 <p align="center">
-  <img src="/api/placeholder/200/200" alt="FoodShare Logo">
+  <img src="https://raw.githubusercontent.com/Soham334/FOODSHARE/main/assets/logo.png" alt="FoodShare Logo" width="200" height="200">
 </p>
 
 <p align="center">
