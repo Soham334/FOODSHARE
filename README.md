@@ -150,13 +150,6 @@ foodshare/
 ├── 📁 assets/                  # Project assets
 │   └── logo.png               # FoodShare logo
 │
-├── 📁 components/              # Reusable UI components
-│   ├── 📁 chatbot/            # AI assistant module
-│   |
-│   │
-│   └── 📁 common/             # Shared UI elements
-│       ├── header.php         # Site header component
-│       └── footer.php         # Site footer component
 │
 ├── 📁 config/                  # Configuration files
 │   ├── config.php             # Main configuration settings (1 KB)
