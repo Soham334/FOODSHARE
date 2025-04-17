@@ -152,10 +152,7 @@ foodshare/
 │
 ├── 📁 components/              # Reusable UI components
 │   ├── 📁 chatbot/            # AI assistant module
-│   │   ├── chatbot.css        # Chatbot styling (5 KB)
-│   │   ├── chatbot.js         # Chatbot functionality (4 KB)
-│   │   ├── constants.js       # Configuration constants (5 KB)
-│   │   └── speech.js          # Voice interaction module (1 KB)
+│   |
 │   │
 │   └── 📁 common/             # Shared UI elements
 │       ├── header.php         # Site header component
