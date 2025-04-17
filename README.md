@@ -12,7 +12,6 @@
 
 ## 📑 Table of Contents
 - [🌟 Executive Overview](#-executive-overview)
-- [📊 Impact Metrics](#-impact-metrics)
 - [💡 Core Functionality](#-core-functionality)
   - [🥫 Donation Management System](#-donation-management-system)
   - [👥 Volunteer Coordination Platform](#-volunteer-coordination-platform)
@@ -34,18 +33,6 @@ FoodShare represents a comprehensive web-based solution developed to address two
 
 By implementing sophisticated matching algorithms and intuitive user interfaces, FoodShare optimizes the flow of excess food resources from businesses and individuals to community members experiencing food insecurity, while minimizing administrative overhead and logistical challenges.
 
-## 📊 Impact Metrics
-
-| Metric | Achievement | Significance |
-|--------|-------------|-------------|
-| **🍲 Meals Distributed** | 10,000+ | Direct nutritional support to community members |
-| **👨‍👩‍👧‍👦 Families Assisted** | 500+ | Households experiencing improved food security |
-| **🏙️ Communities Reached** | 25+ | Geographic distribution of impact |
-
-**Key Performance Indicators:**
-- **83%** program efficiency rate (donations directed to food programs)
-- **78%** reduction in partner store food waste
-- **93%** of recipient families reporting improved food security status
 
 ## 💡 Core Functionality
 
