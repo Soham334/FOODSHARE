@@ -1,4 +1,4 @@
-# 🍽️ FoodShare Platform
+# 🍽️ FoodDonate Platform
 ## Comprehensive Solution for Food Donation Management and Distribution
 
 <p align="center">
@@ -71,7 +71,7 @@ The platform prioritizes accessibility and usability through:
 
 ## 🎯 Organizational Mission
 
-FoodShare is dedicated to creating sustainable connections between communities to systematically reduce hunger and food waste through innovative technological solutions and compassionate community action.
+FoodDonate is dedicated to creating sustainable connections between communities to systematically reduce hunger and food waste through innovative technological solutions and compassionate community action.
 
 ### Organizational Identity
 The FoodShare team comprises dedicated community advocates with expertise in food security, waste reduction, and sustainable community development. Through strategic coordination of volunteer networks and donor relationships, we ensure optimal resource utilization while maintaining dignity for all participants in the ecosystem.
@@ -140,8 +140,8 @@ Environmental responsibility represents a core design principle throughout our o
 5. **Application Access**
    - Navigate to configured URL via web browser
    - Default administrative credentials:
-     - Username: admin@foodshare.org
-     - Password: foodshare2025
+     - Username: ADMIN
+     - Password: admin
 
 ## 📁 Project Structure
 
